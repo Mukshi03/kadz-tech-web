@@ -51,3 +51,11 @@ Logo files live in `public/logo/` (shapes, not fonts, so they render the same ev
 | `kadz-tech-icon.svg` | Full-bleed square icon (favicon, app icon, avatars) |
 
 In the site the logo is the `Logo` / `LogoMark` component in `src/components/Logo.jsx`, which uses the theme colors.
+
+## Deployment
+
+The site is hosted on Vercel at https://kadz-tech.vercel.app and deploys automatically from GitHub:
+
+- Every push to `main` on [Mukshi03/kadz-tech-web](https://github.com/Mukshi03/kadz-tech-web) builds and publishes a new production version.
+- Pushes to other branches and pull requests get their own preview URLs.
+- `vercel.json` sends every path to `index.html`, so page URLs work when opened or refreshed directly.
