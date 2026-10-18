@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import { useEffect, useRef, useState } from 'react'
 import {
-  ArrowRight, Briefcase, Building2, ChevronDown, Code2, Globe, LifeBuoy, Menu, Newspaper,
+  ArrowRight, Building2, ChevronDown, Globe, LifeBuoy, Menu, Newspaper,
   Search, Truck, Users, Warehouse, X,
 } from 'lucide-react'
 import { brand } from '../config'
@@ -34,8 +34,6 @@ const menus = [
     label: 'About',
     items: [
       [Users, 'About Us', `The story behind ${brand.name}`, '/about'],
-      [Code2, 'Hackers Program', 'Internship program', '/hackers-program'],
-      [Briefcase, 'Careers', 'Join the team', '/careers'],
     ],
   },
 ]

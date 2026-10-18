@@ -5,7 +5,7 @@ import { brand, whatsappLink } from '../config'
 import Logo from './Logo'
 
 const columns = [
-  ['Company', [['About Us', '/about'], ['Careers', '/careers'], ['Blog and News', '/blog']]],
+  ['Company', [['About Us', '/about'], ['Blog and News', '/blog']]],
   ['Services', [['Find a Warehouse', '/find-warehouse'], ['Warehousing', '/warehousing'], ['Transportation', '/transportation']]],
   ['Products', [['Warehouse Management System (WMS)', '/warehouse-management-system']]],
   ['Helpful Links', [['Help Center', '/help'], ['Logistics Dictionary', '/dictionary'], ['Terms and Conditions', '/terms-conditions'], ['Privacy Policy', '/privacy-policy']]],

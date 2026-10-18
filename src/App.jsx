@@ -11,8 +11,6 @@ import Wms from './pages/Wms'
 import HelpCenter from './pages/HelpCenter'
 import Blog from './pages/Blog'
 import About from './pages/About'
-import HackersProgram from './pages/HackersProgram'
-import Careers from './pages/Careers'
 import Dictionary from './pages/Dictionary'
 import Legal from './pages/Legal'
 import ContactPage from './pages/ContactPage'
@@ -33,8 +31,6 @@ function App() {
           <Route path="/help" element={<HelpCenter />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
-          <Route path="/hackers-program" element={<HackersProgram />} />
-          <Route path="/careers" element={<Careers />} />
           <Route path="/dictionary" element={<Dictionary />} />
           <Route path="/terms-conditions" element={<Legal key="terms" doc="terms" />} />
           <Route path="/privacy-policy" element={<Legal key="privacy" doc="privacy" />} />

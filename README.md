@@ -29,8 +29,6 @@ npm run dev
 | `/help` | Help Center |
 | `/blog` | Blog and News |
 | `/about` | About Us |
-| `/hackers-program` | Hackers Program |
-| `/careers` | Careers |
 | `/dictionary` | Logistics Dictionary |
 | `/terms-conditions`, `/privacy-policy` | Legal pages (`src/pages/Legal.jsx`) |
 | `/contact` | Contact |
