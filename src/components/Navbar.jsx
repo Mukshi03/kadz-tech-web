@@ -2,7 +2,7 @@ import { Link } from 'react-router'
 import { useEffect, useRef, useState } from 'react'
 import {
   ArrowRight, Building2, ChevronDown, Globe, LifeBuoy, Menu, Newspaper,
-  Search, Truck, Users, Warehouse, X,
+  Search, Truck, Warehouse, X,
 } from 'lucide-react'
 import { brand } from '../config'
 import Logo from './Logo'
@@ -30,12 +30,8 @@ const menus = [
       [Newspaper, 'Blog and News', 'Updates from the team', '/blog'],
     ],
   },
-  {
-    label: 'About',
-    items: [
-      [Users, 'About Us', `The story behind ${brand.name}`, '/about'],
-    ],
-  },
+  // A menu with `to` and no items is a direct link instead of a dropdown.
+  { label: 'About Us', to: '/about' },
 ]
 
 function Navbar() {
@@ -71,7 +67,11 @@ function Navbar() {
           <Logo />
 
           <div className="hidden items-center gap-1 lg:flex">
-            {menus.map((menu) => (
+            {menus.map((menu) => menu.to ? (
+              <Link key={menu.label} to={menu.to} className="rounded-md px-3 py-2 text-sm font-medium text-band-ink/80 hover:text-accent">
+                {menu.label}
+              </Link>
+            ) : (
               <div key={menu.label} className="group relative">
                 <button className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-band-ink/80 hover:text-accent">
                   {menu.label}
@@ -117,6 +117,14 @@ function Navbar() {
           <div className="mx-auto mt-2 w-full max-w-sm">
             <nav className="flex flex-col">
               {menus.map((menu) => {
+                if (menu.to) {
+                  return (
+                    <Link key={menu.label} to={menu.to} onClick={close} className="flex w-full items-center border-b border-band-ink/10 px-1 py-5">
+                      <span className="flex-1 font-display text-2xl font-extrabold uppercase">{menu.label}</span>
+                      <ArrowRight size={18} className="text-band-ink/60" />
+                    </Link>
+                  )
+                }
                 const expanded = section === menu.label
                 return (
                   <div key={menu.label}>
