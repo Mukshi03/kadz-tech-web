@@ -7,7 +7,6 @@ import Warehousing from './pages/Warehousing'
 import FindWarehouse from './pages/FindWarehouse'
 import Transportation from './pages/Transportation'
 import FindTransport from './pages/FindTransport'
-import Fulfillment from './pages/Fulfillment'
 import Wms from './pages/Wms'
 import HelpCenter from './pages/HelpCenter'
 import Blog from './pages/Blog'
@@ -30,7 +29,6 @@ function App() {
           <Route path="/find-warehouse" element={<FindWarehouse />} />
           <Route path="/transportation" element={<Transportation />} />
           <Route path="/find-transport" element={<FindTransport />} />
-          <Route path="/fulfillment" element={<Fulfillment />} />
           <Route path="/warehouse-management-system" element={<Wms />} />
           <Route path="/help" element={<HelpCenter />} />
           <Route path="/blog" element={<Blog />} />

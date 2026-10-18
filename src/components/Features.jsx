@@ -53,30 +53,9 @@ function TransportVisual() {
   )
 }
 
-function FulfillmentVisual() {
-  const steps = ['Picked', 'Packed', 'Shipped']
-  return (
-    <div className={card}>
-      <p className="font-semibold">Order #—</p>
-      <p className="text-sm text-muted">Store · Platform</p>
-      <div className="mt-6 flex items-center">
-        {steps.map((s, i) => (
-          <div key={s} className="flex flex-1 items-center last:flex-none">
-            <div className="flex flex-col items-center gap-1">
-              <span className="grid size-8 place-items-center border-2 border-line text-muted"><Check size={16} /></span>
-              <span className="font-mono text-[11px] uppercase">{s}</span>
-            </div>
-            {i < steps.length - 1 && <div className="mx-2 mb-5 h-0.5 flex-1 bg-line" />}
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 const features = [
   {
-    title: 'Warehousing & Fulfillment',
+    title: 'Warehousing',
     text: 'Store your goods and track your inventory from one dashboard.',
     Visual: WarehouseVisual,
     to: '/warehousing',
@@ -86,12 +65,6 @@ const features = [
     text: 'Move goods between warehouses, stores and customers.',
     Visual: TransportVisual,
     to: '/transportation',
-  },
-  {
-    title: 'E-commerce Fulfillment',
-    text: 'Your online orders picked, packed and shipped for you.',
-    Visual: FulfillmentVisual,
-    to: '/fulfillment',
   },
 ]
 
@@ -103,7 +76,7 @@ function Features() {
           <Dock n={3}>How it works</Dock>
           <h2 className="text-[clamp(2rem,4.5vw,3.2rem)]">More about our services at {brand.name}</h2>
           <p className="text-lg text-band-ink/70">
-            Storage, transport and e-commerce fulfillment in one place.
+            Storage and transport in one place.
           </p>
         </div>
 

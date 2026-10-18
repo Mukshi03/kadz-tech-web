@@ -6,7 +6,7 @@ import Logo from './Logo'
 
 const columns = [
   ['Company', [['About Us', '/about'], ['Careers', '/careers'], ['Blog and News', '/blog']]],
-  ['Services', [['Find a Warehouse', '/find-warehouse'], ['Warehousing', '/warehousing'], ['Transportation', '/transportation'], ['Fulfillment', '/fulfillment']]],
+  ['Services', [['Find a Warehouse', '/find-warehouse'], ['Warehousing', '/warehousing'], ['Transportation', '/transportation']]],
   ['Products', [['Warehouse Management System (WMS)', '/warehouse-management-system']]],
   ['Helpful Links', [['Help Center', '/help'], ['Logistics Dictionary', '/dictionary'], ['Terms and Conditions', '/terms-conditions'], ['Privacy Policy', '/privacy-policy']]],
 ]
@@ -43,7 +43,7 @@ function Footer() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-3 lg:grid-cols-6">
           <div className="md:col-span-3 lg:col-span-2">
             <Logo />
-            <p className="mt-4 max-w-xs text-sm">{brand.tagline}. Storage, transportation and fulfillment for businesses across Saudi Arabia.</p>
+            <p className="mt-4 max-w-xs text-sm">{brand.tagline}. Storage and transportation for businesses across Saudi Arabia.</p>
             <div className="mt-5 flex gap-2">
               {socials.map(([label, href, d]) => (
                 <a key={label} href={href || '#'} aria-label={label} className="grid size-9 place-items-center rounded-md border border-band-ink/20 hover:border-accent hover:text-accent">

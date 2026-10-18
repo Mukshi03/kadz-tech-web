@@ -13,10 +13,6 @@ const quoteFields = {
     { name: 'from', label: 'From', placeholder: 'Select a region', options: regions },
     { name: 'to', label: 'To', placeholder: 'Select a region', options: regions },
   ],
-  fulfillment: [
-    { name: 'orders', label: 'How many orders a month?', placeholder: 'Select an option', options: ['Up to 100', '100 to 500', '500 to 2,000', '2,000 to 10,000', '10,000+'] },
-    { name: 'platform', label: 'Which store platform?', placeholder: 'Select an option', options: ['Salla', 'Zid', 'Shopify', 'Jahez', 'Other', 'No online store'] },
-  ],
 }
 
 const input = 'h-11 w-full rounded-md border border-line bg-bg px-4 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/30'

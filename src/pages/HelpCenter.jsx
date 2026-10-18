@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { CreditCard, PackageOpen, Rocket, Search, Settings, Truck, Warehouse } from 'lucide-react'
+import { CreditCard, Rocket, Search, Settings, Truck, Warehouse } from 'lucide-react'
 import { Link } from 'react-router'
 import { IconBox, Section } from '../components/page/blocks'
 import EmptyState from '../components/EmptyState'
@@ -8,7 +8,6 @@ const categories = [
   [Rocket, 'Getting started'],
   [Warehouse, 'Warehousing'],
   [Truck, 'Transportation'],
-  [PackageOpen, 'Fulfillment'],
   [CreditCard, 'Billing & payments'],
   [Settings, 'Account & settings'],
 ]

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { PackageOpen, Truck, Warehouse } from 'lucide-react'
+import { Truck, Warehouse } from 'lucide-react'
 import QuoteForm from './QuoteForm'
 import { Dock } from './page/blocks'
 
@@ -16,12 +16,6 @@ const services = [
     icon: Truck,
     text: 'Trucks for moving goods within and between cities.',
   },
-  {
-    key: 'fulfillment',
-    label: 'Fulfillment',
-    icon: PackageOpen,
-    text: 'We pick, pack and ship your online orders.',
-  },
 ]
 
 function Services() {
@@ -33,7 +27,7 @@ function Services() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid max-w-3xl gap-4">
           <Dock n={2}>Services</Dock>
-          <h2 className="text-[clamp(2rem,4.5vw,3.2rem)]">Store it, pack it, move it</h2>
+          <h2 className="text-[clamp(2rem,4.5vw,3.2rem)]">Store it, move it</h2>
           <p className="text-lg text-muted">Our core services, built to make every part of your logistics simpler.</p>
         </div>
 

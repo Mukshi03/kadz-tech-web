@@ -1,6 +1,6 @@
 # Kadz Tech
 
-Landing page for a B2B logistics marketplace (warehousing, transportation and fulfillment), built with React, Vite and Tailwind CSS.
+Landing page for a B2B logistics marketplace (warehousing and transportation), built with React, Vite and Tailwind CSS.
 
 ## Getting started
 
@@ -21,11 +21,10 @@ npm run dev
 | Path | Page |
 | --- | --- |
 | `/` | Home |
-| `/warehousing` | Warehousing & Fulfillment |
+| `/warehousing` | Warehousing |
 | `/find-warehouse` | Find a Warehouse (storage picker + listings) |
 | `/transportation` | Transportation |
 | `/find-transport` | Find Transport (truck request form + load board) |
-| `/fulfillment` | E-commerce Fulfillment |
 | `/warehouse-management-system` | WMS |
 | `/help` | Help Center |
 | `/blog` | Blog and News |

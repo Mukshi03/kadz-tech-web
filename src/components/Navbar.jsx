@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import { useEffect, useRef, useState } from 'react'
 import {
-  ArrowRight, Briefcase, Building2, ChevronDown, Code2, Globe, LifeBuoy, Menu, Newspaper, PackageOpen,
+  ArrowRight, Briefcase, Building2, ChevronDown, Code2, Globe, LifeBuoy, Menu, Newspaper,
   Search, Truck, Users, Warehouse, X,
 } from 'lucide-react'
 import { brand } from '../config'
@@ -15,7 +15,6 @@ const menus = [
       [Search, 'Find a Warehouse', 'Browse available space', '/find-warehouse'],
       [Truck, 'Transportation', 'Trips within and between cities', '/transportation'],
       [Search, 'Find Transport', 'Book a truck for your shipment', '/find-transport'],
-      [PackageOpen, 'Fulfillment', 'Pick, pack and ship online orders', '/fulfillment'],
     ],
   },
   {

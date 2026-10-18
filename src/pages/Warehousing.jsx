@@ -1,4 +1,4 @@
-import { Boxes, Network, Zap } from 'lucide-react'
+import { Boxes, Network } from 'lucide-react'
 import { brand } from '../config'
 import { Button, FaqList, FeatureRows, PageHero, Section, Sectors, SpecTable } from '../components/page/blocks'
 import ExpertCta from '../components/ExpertCta'
@@ -8,7 +8,6 @@ const name = brand.name
 const features = [
   { icon: Boxes, title: 'On-demand warehousing', text: 'Rent the space you need, for as long as you need it.' },
   { icon: Network, title: 'Connected warehousing network', text: 'Manage stock across several warehouses from one dashboard.' },
-  { icon: Zap, title: 'B2B fulfillment center (fast-moving goods)', text: 'High-volume handling for wholesale and retail replenishment.' },
 ]
 
 // [question, answer]. Answers are blank until written.
@@ -17,7 +16,6 @@ const faqs = [
   ['Can I store a few pallets instead of renting a whole warehouse?', ''],
   [`What goods can ${name} store?`, ''],
   ['How quickly can I start storing?', ''],
-  [`Does ${name} fulfill orders as well as store them?`, ''],
   ['Where in Saudi Arabia are the warehouses?', ''],
 ]
 
@@ -26,8 +24,8 @@ function Warehousing() {
     <>
       <PageHero
         eyebrow="Warehousing"
-        title={`${name}'s Warehousing & Fulfillment`}
-        text="Warehouse space and fulfillment for your business."
+        title={`${name}'s Warehousing`}
+        text="Warehouse space for your business."
         actions={[['Get a quote', '/#services'], ['Contact Us', '/contact']]}
       />
       <Section><FeatureRows items={features} /></Section>

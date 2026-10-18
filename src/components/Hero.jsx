@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import {
-  ArrowDownToLine, ArrowUpFromLine, BarChart3, Boxes, CircleHelp, FolderTree, LayoutDashboard, MapPinned, PackageOpen,
+  ArrowDownToLine, ArrowUpFromLine, BarChart3, Boxes, CircleHelp, FolderTree, LayoutDashboard, MapPinned, 
   Plus, Settings, Truck, Users, Warehouse,
 } from 'lucide-react'
 import { brand } from '../config'
@@ -14,7 +14,6 @@ const sidebar = [
   [Truck, 'Transportations'],
   [Boxes, 'SKUs'],
   [FolderTree, 'SKU Groups'],
-  [PackageOpen, 'Fulfillment'],
   [MapPinned, 'Addresses'],
   [Users, 'Suppliers'],
   [BarChart3, 'Reports'],
@@ -72,7 +71,6 @@ function DashboardMockup() {
           <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
             <div className="inline-flex border border-line bg-surface p-1 text-xs">
               <span className="bg-band px-3 py-1 font-medium text-band-ink">Wholesale</span>
-              <span className="px-3 py-1 text-muted">Fulfillment</span>
             </div>
             <div className="flex gap-2 text-xs">
               <span className="rounded-md border border-line bg-surface px-3 py-1.5 font-medium">Add Item</span>
@@ -153,7 +151,7 @@ function Hero() {
           Everything you need for <span className="text-accent-text">logistics</span>
         </h1>
         <p className="mt-6 max-w-[52ch] text-xl text-muted">
-          One connected system for storage, transportation and fulfillment, so your supply chain runs efficiently from end to end.
+          One connected system for storage and transportation, so your supply chain runs efficiently from end to end.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Link to="/find-warehouse" className="inline-flex items-center justify-center rounded-md border-2 border-transparent bg-accent px-6 py-3 font-semibold text-accent-ink transition hover:-translate-y-px hover:bg-accent-hover">
