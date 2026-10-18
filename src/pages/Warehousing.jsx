@@ -1,4 +1,4 @@
-import { Boxes, Network, PackageOpen, Zap } from 'lucide-react'
+import { Boxes, Network, Zap } from 'lucide-react'
 import { brand } from '../config'
 import { Button, FaqList, FeatureRows, PageHero, Section, Sectors, SpecTable } from '../components/page/blocks'
 import ExpertCta from '../components/ExpertCta'
@@ -7,7 +7,6 @@ const name = brand.name
 
 const features = [
   { icon: Boxes, title: 'On-demand warehousing', text: 'Rent the space you need, for as long as you need it.' },
-  { icon: PackageOpen, title: 'E-commerce & quick-commerce fulfillment', text: 'Store close to your customers and ship online orders from the same stock.' },
   { icon: Network, title: 'Connected warehousing network', text: 'Manage stock across several warehouses from one dashboard.' },
   { icon: Zap, title: 'B2B fulfillment center (fast-moving goods)', text: 'High-volume handling for wholesale and retail replenishment.' },
 ]
